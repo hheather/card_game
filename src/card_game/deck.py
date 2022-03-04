@@ -13,5 +13,5 @@ class Deck:
 
     def draw(self) -> str:
         human_friendly_cards = [card.__str__() for card in self.cards]
-        choices = random.choices(human_friendly_cards, k=2)
+        choices = random.sample(human_friendly_cards, k=2)
         return ', '.join(choices)

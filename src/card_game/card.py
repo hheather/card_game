@@ -10,4 +10,4 @@ class Card:
     rank: Rank
 
     def __str__(self) -> str:
-        return f'{self.rank} of {self.suit}'
+        return f'{self.rank.value} of {self.suit.value}'
